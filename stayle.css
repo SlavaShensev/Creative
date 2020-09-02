@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+    color: #3a3e3f;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    background: #e7e7e7 url("img/body-bg.jpg");
+    font-family: "pt Sans";
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.wrapper {
+
+}
+
+.header {
+    background-image: url("img/header-bg.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 91px;
+    border-bottom: 5px solid #b7b7b6;
+    height: 91px;
+}
+
+.header__content {
+    background: url("img/header-top-bg.jpg") repeat-x;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+}
+
+.header__top {
+    display: flex;
+    align-items: baseline;
+}
+
+.header__logo {
+    background: #f26c4f;
+}
+
+.logo__title {
+    color: #fef5f3;
+}
+
+.logo__plus {
+    color: #f5937e;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__nav-item {
+    padding-left: 20px;
+}
+
+.title {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
