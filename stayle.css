@@ -112,6 +112,8 @@ body {
 
 .logo__title {
     color: #fef5f3;
+    padding-left: 30px;
+    padding-right: 72px;
 }
 
 .logo__plus {
@@ -127,21 +129,69 @@ body {
     padding-left: 20px;
 }
 
-.title {
-    color: #fff;
+.header__nav-title {
+    color: #ffffff;
 }
 
+.main {
 
+}
 
+.main__content {
 
+}
 
+.article__list {
 
+}
 
+.article__item1 {
+    margin-bottom: 30px;
+}
 
+.article__img {
+    background: #ffffff;
+    border: 1px solid #d7d7d7;
+    padding: 6px;
+    position: relative;
+    margin-bottom: 8px;
+}
 
+.article__social {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    margin-bottom: 10px;
+}
 
+.social__Facebook {
+    margin-bottom: 10px;
+}
 
+.article__content {
+    background: #ffffff url("img/bg-main-content.jpg") no-repeat;
+    max-width: 627px;
+    border: 1px solid #d7d7d7;
+    padding: 35px;
+    position: relative;
+}
 
+.post__trigon {
+    background: url("img/trigon.png") no-repeat;
+    width: 33px;
+    height: 17px;
+    position: absolute;
+    top: -16px;
+    left: 77px;
+}
+
+.article__item2 {
+    margin-bottom: 30px;
+}
+
+.article__item3 {
+    margin-bottom: 30px;
+}
 
 
 
