@@ -65,7 +65,8 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     background: #e7e7e7 url("img/body-bg.jpg");
-    font-family: "pt Sans";
+    font-family: "pt Sans";  /*TODO: где этот шрифт подключен ?*/
+
     font-size: 13px;
     line-height: 1.3;
 }
