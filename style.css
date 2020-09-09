@@ -65,8 +65,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     background: #e7e7e7 url("img/body-bg.jpg");
-    font-family: "pt Sans";  /*TODO: где этот шрифт подключен ?*/
-
+    font-family: "pt Sans", sans-serif;
     font-size: 13px;
     line-height: 1.3;
 }
@@ -95,13 +94,13 @@ body {
 }
 
 .header__logo {
-    background: #f26c4f;
+    color: #fef5f3;
 }
 
 .logo__title {
-    color: #fef5f3;
     padding-left: 30px;
     padding-right: 72px;
+    background: #f26c4f;
 }
 
 .logo__plus {
@@ -117,11 +116,11 @@ body {
     padding-left: 20px;
 }
 
-.header__nav-title {
+.header__nav-link {
     color: #ffffff;
 }
 
-.article__item1 {
+.article__list-item {
     margin-top: 23px;
     margin-bottom: 30px;
 }
@@ -134,15 +133,22 @@ body {
     margin-bottom: 8px;
 }
 
-.article__social {
-    position: absolute;
-    bottom: 30px;
-    left: 50px;
-    margin-bottom: 10px;
+.socials {
+    display: flex;
 }
 
-.social__Facebook {
-    margin-bottom: 10px;
+.socials__item {
+    margin-left: 10px;
+}
+
+.socials--vertical {
+    flex-direction: column;
+}
+
+.article__socials {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
 }
 
 .article__content {
@@ -153,8 +159,9 @@ body {
     position: relative;
 }
 
-.post__trigon {
+.article__content::before {
     background: url("img/trigon.png") no-repeat;
+    content: "";
     width: 33px;
     height: 17px;
     position: absolute;
@@ -162,29 +169,30 @@ body {
     left: 77px;
 }
 
-.article__title-bg {
-    font-size: 30px;
-    color: #3a3e3f;
-    margin-bottom: 10px;
-}
-
-.article__title-tn {
+.article__time {
     font-size: 12px;
     color: #b9b9b9;
     margin-bottom: 20px;
 }
 
-.article__title-md {
+.article__text {
     font-size: 15px;
     color: #f3765b;
     margin-bottom: 20px;
 }
 
-.post__content-sm {
+.article__post {
     font-size: 15px;
     color: #959595;
     margin-bottom: 15px;
     line-height: 2;
+}
+
+
+.article__link {
+    font-size: 30px;
+    color: #3a3e3f;
+    margin-bottom: 10px;
 }
 
 .article__link:hover {
@@ -200,21 +208,26 @@ body {
     margin-bottom: 30px;
 }
 
-.main__pagination {
+.pagination {
     display: flex;
-    margin: 0 0 40px 30px;
+}
+
+.main__pagination {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.pagination__item {
+    margin-right: 10px;
+}
+
+.pagination__link--disabled {
+    background: #f26c4f;
+   color: #fff;
 }
 
 .pagination__link {
     color: #3a3e3f;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 3px 3px 7px 7px;
-}
-
-.pagination__link:hover {
-    text-decoration: underline;
-    color: #f26c4f;
 }
 
 .sidebar__widget {
@@ -273,6 +286,10 @@ body {
     background: url("img/dot-widget-li.png") bottom repeat-x;
 }
 
+.article__time {
+    margin-top: 15px;
+}
+
 .archives__text {
     background: url("img/widget-a1.jpg") left center no-repeat;
     color: #828282;
@@ -310,7 +327,7 @@ body {
     color: #3a3a3a;
 }
 
-.resentPost__link:hover{
+.resentPost__link:hover {
     text-decoration: underline;
     color: #f26c4f;
 }
@@ -347,7 +364,7 @@ body {
     margin-bottom: 20px;
 }
 
-.footer__copy{
+.footer__copy {
     color: rgba(255, 255, 255, 0.5);
 }
 

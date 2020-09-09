@@ -20,8 +20,7 @@
     <meta name="mrc__share_description" content="">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
-    <link rel="stylesheet" href="stayle.css">
-        <!--    TODO: stayle ? -->
+    <link rel="stylesheet" href="style.css">
     <title>Creative+</title>
 </head>
 <body>
@@ -30,59 +29,43 @@
         <div class="header__content">
             <div class="container">
                 <div class="header__top">
-                    <a href="#" class="header__logo" title="logo">
-<!--                        TODO блочный элемент внутри строчного.  a > h1 -->
-                        <h1 class="logo__title">
+                    <h1 class="logo__title">
+                        <a href="#" class="header__logo" title="logo">
                             Creative
                             <sup class="logo__plus">
                                 +
                             </sup>
-                        </h1>
-                    </a>
+                        </a>
+                    </h1>
                     <ul class="header__nav">
                         <li class=" header__nav-item">
                             <a href="#" class="header__nav-link" title="">
-<!--                              TODO:  <span class="header__nav-title"> незачем, можно цвет ссылки перенести на класс самой ссылки.-->
-                            <span class="header__nav-title">
                                 Articles
-                            </span>
                             </a>
                         </li>
                         <li class=" header__nav-item">
                             <a href="#" class="header__nav-link" title="">
-                            <span class="header__nav-title">
-<!--                                TODO: Граматическая ошибка-->
-                                Toutorials
-                            </span>
+                                Tutorials
                             </a>
                         </li>
                         <li class=" header__nav-item">
                             <a href="#" class="header__nav-link" title="">
-                            <span class="header__nav-title">
                                 design
-                            </span>
                             </a>
                         </li>
                         <li class=" header__nav-item">
                             <a href="#" class="header__nav-link" title="">
-                            <span class="header__nav-title">
                                 web design
-                            </span>
                             </a>
                         </li>
                         <li class=" header__nav-item">
                             <a href="#" class="header__nav-link" title="">
-                            <span class="header__nav-title">
                                 other
-                            </span>
                             </a>
                         </li>
                         <li class=" header__nav-item">
                             <a href="#" class="header__nav-link" title="">
-                            <span class="header__nav-title">
-                                <!--                                TODO: Граматическая ошибка-->
-                                cotnact
-                            </span>
+                                contact
                             </a>
                         </li>
                     </ul>
@@ -96,377 +79,283 @@
             <div class="main__inner">
                 <div class="main__content">
                     <ul class="article__list">
-                        <!--                TODO: article__item1 ???
-
                         <li class="article__list-item">
                             <article class="article">
-                                <div class="article__img"></div>
-                                <div class="article__content"></div>
-                            </article>
-                        </li>
-
-
-                        -->
-                        <li class="article__item1">
-                            <div class="article__img">
-                                <img src="img/main-post1.jpg" alt="">
-                                <div class="article__social">
-                                    <!--                TODO: это явно две разные ссылки на сторонний ресурс -->
-                                    <a href="#">
-                                        <img src="img/Facebook-img.png" class="social__Facebook" alt="">
-                                        <img src="img/Twitter-img.png" class="social__Twitter" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="article__content">
-                                <!--                TODO: такие элементы стилистии лучше делать через псевдоэлементы :after или :before, лишняя разметка -->
-                                <div class="post__trigon">
-                                </div>
-                                <div class="article__title">
-                                    <!--                TODO: h2 > a -->
-                                    <a href="#" class="article__link">
-                                        <h2 class="article__title-bg">
-                                            Roundup: 20 web designs with
-                                            large backgrounds
-                                        </h2>
-                                    </a>
-                                    <!--                TODO: h3 тут лишний, это <time> -->
-                                    <h3 class="article__title-tn">
-                                        19th April 2012
-                                    </h3>
-                                    <!--                TODO: h3 тут лишний -->
-                                    <h3 class="article__title-md">
-                                        Sub heading to go here
-                                    </h3>
-                                </div>
-                                <div class="article__post">
-                                    <p class="post__content-sm">
-                                        Pellentesque habitant morbi tristique senectus et
-                                        netus et malesuada fames ac turpis egestas. Vestibulum
-                                        scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
-                                        Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="article__item2">
-                            <div class="article__img">
-                                <img src="img/main-post2.jpg" alt="">
-                                <div class="article__social">
-                                    <a href="#" class="article__link">
-                                        <img src="img/Facebook-img.png" class="social__Facebook" alt="">
-                                        <img src="img/Twitter-img.png" class="social__Twitter" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="article__content">
-                                <div class="post__trigon"></div>
-                                <div class="article__title">
-                                    <a href="#" class="article__link">
-                                        <h2 class="article__title-bg">
-                                            Roundup: 20 web designs with
-                                            large backgrounds
-                                        </h2>
-                                    </a>
-                                    <h3 class="article__title-tn">
-                                        19th April 2012
-                                    </h3>
-                                    <h3 class="article__title-md">
-                                        Sub heading to go here
-                                    </h3>
-                                </div>
-                                <div class="article__post">
-                                    <p class="post__content-sm">
-                                        Pellentesque habitant morbi tristique senectus et
-                                        netus et malesuada fames ac turpis egestas. Vestibulum
-                                        scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
-                                        Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="article__item3">
-                            <div class="article__img">
-                                <img src="img/main-post3.jpg" alt="">
-                                <div class="article__social">
-                                    <a href="#">
-                                        <img src="img/Facebook-img.png" class="social__Facebook" alt="">
-                                        <img src="img/Twitter-img.png" class="social__Twitter" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="article__content">
-                                <div class="post__trigon">
-                                </div>
-                                <div class="article__title">
-                                    <a href="#" class="article__link">
-                                        <h2 class="article__title-bg">
-                                            Roundup: 20 web designs with
-                                            large backgrounds
-                                        </h2>
-                                    </a>
-                                    <h3 class="article__title-tn">
-                                        19th April 2012
-                                    </h3>
-                                    <h3 class="article__title-md">
-                                        Sub heading to go here
-                                    </h3>
-                                </div>
-                                <div class="article__post">
-                                    <p class="post__content-sm">
-                                        Pellentesque habitant morbi tristique senectus et
-                                        netus et malesuada fames ac turpis egestas. Vestibulum
-                                        scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
-                                        Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-
-<!--                    TODO: думаю пагинация должна быть тут, так как она непосредственно относится к списку статьей-->
-                </div>
-                <aside class="main__sidebar">
-                    <!--                    TODO: .sidebar__widget по БЭМ не может быть без БЛОКА .sidebar -->
-                    <div class="sidebar__widget">
-                        <!--                    TODO: .widget__categories по БЭМ не может быть без БЛОКА .widget -->
-                        <div class="widget__categories">
-                            <!--                    TODO: .categories__title по БЭМ не может быть без БЛОКА .categories -->
-                            <h3 class="categories__title">
-                                Blog Categories
-                            </h3>
-                            <ul class="categories__list">
-                                <li class="categories__item">
-                                    <a href="#" class="categories__link">
-                                        <!--                    TODO: блочный элемент внутри строчного a > p -->
-                                        <p class="categories__text">
-                                            Blog Categories 1 (5)
-                                        </p>
-                                    </a>
-                                </li>
-                                <li class="categories__item">
-                                    <a href="#" class="categories__link">
-                                        <p class="categories__text">
-                                            Blog Categories 2 (3)
-                                        </p>
-                                    </a>
-                                </li>
-                                <li class="categories__item">
-                                    <a href="#" class="categories__link">
-                                        <p class="categories__text">
-                                            Blog Categories 3 (8)
-                                        </p>
-                                    </a>
-                                </li>
-                                <li class="categories__item">
-                                    <a href="#" class="categories__link">
-                                        <p class="categories__text">
-                                            Blog Categories 4 (12)
-                                        </p>
-                                    </a>
-                                </li>
-                                <li class="categories__item">
-                                    <a href="#" class="categories__link">
-                                        <p class="categories__text">
-                                            Blog Categories 5 (7)
-                                        </p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="widget__archives">
-                            <h3 class="archives__title">
-                                Archives
-                            </h3>
-                            <ul class="archives__list">
-                                <li class="archives__item">
-                                    <a href="#" class="archives__link">
-                                        <p class="archives__text">
-                                            January 2012 (23)
-                                        </p>
-                                    </a>
-                                </li>
-                                <li class="archives__item">
-                                    <a href="#" class="archives__link">
-                                        <p class="archives__text">
-                                            December 2011 (34)
-                                        </p>
-                                    </a>
-                                </li>
-                                <!--                    TODO: что за </a> ?? -->
-                                </a>
-                                <li class="archives__item">
-                                    <a href="#" class="archives__link">
-                                        <p class="archives__text">
-                                            November 2011 (21)
-                                        </p>
-                                    </a>
-                                </li>
-                                <li class="archives__item">
-                                    <a href="#" class="archives__link">
-                                        <p class="archives__text">
-                                            October 2011 (11)
-                                        </p>
-                                    </a>
-                                </li>
-                                <li class="archives__item">
-                                    <a href="#" class="archives__link">
-                                        <p class="archives__text">
-                                            September 2011 (44)
-                                        </p>
-                                    </a>
-                                </li>
-                                <li class="archives__item">
-                                    <a href="#" class="archives__link">
-                                        <p class="archives__text">
-                                            August 2011 (4)
-                                        </p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="widget__resentPost">
-                            <h3 class="resentPost__title">
-                                Recent Posts
-                            </h3>
-                            <div class="resentPost__content">
-
-                                <!-- TODO:
-
-                                <div class="resentPosts">
-                                    <h3 class="resentPosts__title">
-                                        Recent Posts
-                                    </h3>
-                                    <ul class="resentPosts__list">
-                                        <li class="resentPosts__item">
-
-                                            <article class="resentPost">
-                                                <h3 class="resentPost__title">
-                                                    <a href="" class="resentPost__link">
-                                                        Ut eget metus nibh, nec scelerisque sem.
-                                                        Nulla dui purus, pellentesque sit amet rutrum
-                                                    </a>
-                                                </h3>
-                                                <time class="resentPost__data" datetime="2012-02-14">
-                                                    14th Febuary 2012
-                                                </time>
-                                            </article>
-
+                                <div class="article__img">
+                                    <img src="img/main-post1.jpg" alt="">
+                                    <ul class="socials socials--vertical article__socials">
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link" target="_blank">
+                                                <img src="img/Facebook-img.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link" target="_blank">
+                                                <img src="img/Twitter-img.png" alt="">
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="article__content">
+                                    <h2 class="article__title">
+                                        <a href="#" class="article__link">
+                                            Roundup: 20 web designs with
+                                            large backgrounds
+                                        </a>
+                                    </h2>
+                                    <div class="article__time">
+                                        19th April 2012
+                                    </div>
+                                    <div class="article__text">
+                                        Sub heading to go here
+                                    </div>
+                                    <div class="article__post">
+                                        <p class="post__content-sm">
+                                            Pellentesque habitant morbi tristique senectus et
+                                            netus et malesuada fames ac turpis egestas. Vestibulum
+                                            scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
+                                            Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="article__list-item">
+                            <article class="article">
+                                <div class="article__img">
+                                    <img src="img/main-post2.jpg" alt="">
+                                    <ul class="socials socials--vertical article__socials">
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link" target="_blank">
+                                                <img src="img/Facebook-img.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link" target="_blank">
+                                                <img src="img/Twitter-img.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article__content">
+                                    <h2 class="article__title">
+                                        <a href="#" class="article__link">
+                                            Roundup: 20 web designs with
+                                            large backgrounds
+                                        </a>
+                                    </h2>
+                                    <div class="article__time">
+                                        19th April 2012
+                                    </div>
+                                    <div class="article__text">
+                                        Sub heading to go here
+                                    </div>
+                                    <div class="article__post">
+                                        <p class="post__content-sm">
+                                            Pellentesque habitant morbi tristique senectus et
+                                            netus et malesuada fames ac turpis egestas. Vestibulum
+                                            scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
+                                            Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="article__list-item">
+                            <article class="article">
+                                <div class="article__img">
+                                    <img src="img/main-post3.jpg" alt="">
+                                    <ul class="socials socials--vertical article__socials">
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link" target="_blank">
+                                                <img src="img/Facebook-img.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link" target="_blank">
+                                                <img src="img/Twitter-img.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article__content">
+                                    <h2 class="article__title">
+                                        <a href="#" class="article__link">
+                                            Roundup: 20 web designs with
+                                            large backgrounds
+                                        </a>
+                                    </h2>
+                                    <div class="article__time">
+                                        19th April 2012
+                                    </div>
+                                    <div class="article__text">
+                                        Sub heading to go here
+                                    </div>
+                                    <div class="article__post">
+                                        <p class="post__content-sm">
+                                            Pellentesque habitant morbi tristique senectus et
+                                            netus et malesuada fames ac turpis egestas. Vestibulum
+                                            scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
+                                            Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    <ul class="pagination main__pagination">
+                        <li class="pagination__item">
+                            <a class=" pagination__link--disabled" href="#" tabindex="-1">
+                                1
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">
+                                2
+                            </a>
+                        </li>
+                        <li class="pagination__item pagination__item--active">
+                            <a class="pagination__link" href="#">
+                                3
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">
+                                4
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <aside class="sidebar">
+                    <div class="sidebar main__sidebar">
+                        <div class="widget">
+                            <div class="widget sidebar__widget">
+                                <div class="widget__categories">
+                                    <div class="categories">
 
-                                -->
+                                    </div>
 
-                                <p class="resentPost__text">
-                                    <a href="#" class="resentPost__link">
-                                        Ut eget metus nibh, nec scelerisque sem.
-                                        Nulla dui purus, pellentesque sit amet rutrum
-                                    </a>
-                                    <span class="resentPost__data">
-                                    14th Febuary 2012
-                                </span>
-                                </p>
-                            </div>
-                            <div class="resentPost__content">
-                                <p class="resentPost__text">
-                                    <a href="#" class="resentPost__link">
-                                        Fusce augue arcu, volutpat eu facilisis suscipit,
-                                        venenatis vehicula diam.
-                                    </a>
-                                    <span class="resentPost__data">
-                                    14th Febuary 2012
-                                </span>
-                                </p>
-                            </div>
-                            <div class="resentPost__content">
-                                <p class="resentPost__text">
-                                    <a href="#" class="resentPost__link">
-                                        Ut eget metus nibh, nec scelerisque sem.
-                                        Nulla dui purus, pellentesque sit amet rutrum
-                                    </a>
-                                    <span class="resentPost__data">
-                                    14th Febuary 2012
-                                </span>
-                                </p>
+                                    <div class="widget__archives">
+                                        <h3 class="archives__title">
+                                            Archives
+                                        </h3>
+                                        <ul class="archives__list">
+                                            <li class="archives__item">
+                                                <a href="#" class="archives__link">
+                                                    <p class="archives__text">
+                                                        January 2012 (23)
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="archives__item">
+                                                <a href="#" class="archives__link">
+                                                    <p class="archives__text">
+                                                        December 2011 (34)
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="archives__item">
+                                                <a href="#" class="archives__link">
+                                                    <p class="archives__text">
+                                                        November 2011 (21)
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="archives__item">
+                                                <a href="#" class="archives__link">
+                                                    <p class="archives__text">
+                                                        October 2011 (11)
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="archives__item">
+                                                <a href="#" class="archives__link">
+                                                    <p class="archives__text">
+                                                        September 2011 (44)
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="archives__item">
+                                                <a href="#" class="archives__link">
+                                                    <p class="archives__text">
+                                                        August 2011 (4)
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resentPosts">
+                                        <h3 class="resentPosts__title">
+                                            Recent Posts
+                                        </h3>
+                                        <ul class="resentPosts__list">
+                                            <li class="resentPosts__item">
+                                                <article class="resentPost">
+                                                    <h3 class="resentPost__title">
+                                                        <a href="#" class="resentPost__link">
+                                                            Ut eget metus nibh, nec scelerisque sem.
+                                                            Nulla dui purus, pellentesque sit amet rutrum
+                                                        </a>
+                                                    </h3>
+                                                    <time class="resentPost__data" datetime="2012-02-14">
+                                                        14th Febuary 2012
+                                                    </time>
+                                                </article>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="sidebar__banner">
-                        <!--                TODO: ссылка на сторонний ресурс -->
-                        <a href="#">
-                            <img src="img/siteBar-add.jpg" alt="">
-                        </a>
+                        <div class="sidebar__banner">
+                            <a href="#" target="_blank">
+                                <img src="img/siteBar-add.jpg" alt="">
+                            </a>
+                        </div>
                     </div>
                 </aside>
             </div>
-            <ul class="main__pagination">
-<!--                TODO: .pagination__item по БЭМ не может быть без БЛОКА .pagination-->
-                <li class="pagination__item">
-                    <!--                TODO: Это текущая страница, она точно не ссылка и она должна быть задизейблена (disabled) -->
-                    <a class="pagination__link " href="#">
-                        1
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link" href="#">
-                        2
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link" href="#">
-                        3
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link" href="#">
-                        4
-                    </a>
-                </li>
-            </ul>
         </div>
-    </main>
+</main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__left">
-                    <p class="footer__text">
-                        Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac
-                        mauris. Morbi lectus velit, tincidunt congue pharetra eu, varius
-                        nec libero. Vivamus justo risus, dignissim ac vestibulum eget,
-                        egestas rutrum magna. Etiam malesuada nisi et nisl volutpat tristique.
-                    </p>
-                    <p class="footer__copy">
-                        Copyright 2012 Footer here
-                    </p>
-                </div>
-                <div class="footer__right">
-                    <!--                                TODO: Ссылка на сторонний ресурс (_target) -->
-                    <a href="#" class="link__social">
-                        <img src="img/Facebook-img.png" alt="">
-                    </a>
-                    <a href="#" class="link__social">
-                        <img src="img/Twitter-img.png" alt="">
-                    </a>
-                    <a href="#" link__social>
-                        <img src="img/socialr-img.png" alt="">
-                    </a>
-                </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__left">
+                <p class="footer__text">
+                    Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac
+                    mauris. Morbi lectus velit, tincidunt congue pharetra eu, varius
+                    nec libero. Vivamus justo risus, dignissim ac vestibulum eget,
+                    egestas rutrum magna. Etiam malesuada nisi et nisl volutpat tristique.
+                </p>
+                <p class="footer__copy">
+                    Copyright 2012 Footer here
+                </p>
+            </div>
+            <div class="footer__right">
+                <ul class="socials footer__socials">
+                    <li class="socials__item">
+                        <a href="" class="socials__link" target="_blank">
+                            <img src="img/Facebook-img.png" alt="">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link" target="_blank">
+                            <img src="img/Twitter-img.png" alt="">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link" target="_blank">
+                            <img src="img/socialr-img.png" alt="">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
